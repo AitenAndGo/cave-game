@@ -92,9 +92,23 @@ public:
         int margin = 5;
         int maxDistanceFromEdge = 20;
 
+        int dir_x = rand() % 2;
+        int dir_y = rand() % 2;
+        if (dir_x == 0){
+            dir_x = -1;
+        } else{
+            dir_x = 1;
+        }
+
+        if (dir_y == 0){
+            dir_y = -1;
+        } else{
+            dir_y = 1;
+        }
+
         endPosition = Vector2(
-            margin + rand() % (size_x - 2 * margin - (size_x - maxDistanceFromEdge)),
-            margin + rand() % (size_y - 2 * margin - (size_y - maxDistanceFromEdge))
+            size_x / 2 + (dir_x * (size_x / 2 - margin - rand() % maxDistanceFromEdge)),
+            size_y / 2 + (dir_y * (size_y / 2 - margin - rand() % maxDistanceFromEdge))
         );
 
         map[endPosition.x][endPosition.y] = ' ';
