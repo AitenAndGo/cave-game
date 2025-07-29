@@ -2,6 +2,8 @@
 
 A simple terminal-based game written in C++. You control a character using WASD keys in a cave-like environment. The goal is to provide a minimal but responsive game loop using only standard libraries.
 
+<img width="542" height="513" alt="image" src="https://github.com/user-attachments/assets/18a0241e-3b24-4fc2-9d89-3253c8162a5e" />
+
 ## Features
 
 - Responsive WASD input system
@@ -33,11 +35,11 @@ g++ main.cpp -o cave-game
 Use the following keys to move:
 
 Key	Direction
-W	Up
-A	Left
-S	Down
-D	Right
-Q	Quit game
+- W	Up
+- A	Left
+- S	Down
+- D	Right
+- Q	Quit game
 
 License
 This project is licensed under the MIT License.
